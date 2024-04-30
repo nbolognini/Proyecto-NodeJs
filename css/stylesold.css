@@ -1,0 +1,98 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.navbar {
+  transition: background-color 0.3s ease;
+}
+.title {
+  font-weight: 700;
+}
+
+.slogan {
+  font-weight: 400;
+}
+.content{
+  flex: 1;
+}
+.menu li a {
+  color: white !important;
+}
+.btn-outline-secondary {
+  border-color: white;
+  color: white;
+}
+.btn-outline-secondary:hover {
+  border-color: white;
+  color: black;
+  background-color: white;
+}
+.tchaco-header {
+  background-image: url("../img/fondoheader.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.footerPersonal {
+  background-color: #0e281f;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.titleSection {
+  color: black;
+  font-weight: 700;
+}
+
+.card {
+  border: none !important;
+}
+
+.tchaco-header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 300px;
+}
+.text-left {
+  text-align: left !important;
+}
+.navbar.expanded {
+  background-color: #1db062;
+  text-align: center !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg' fill='white'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.btn-outline-primary{
+  border-color: white !important;
+  color: white !important;
+
+}
+
+.btn-outline-primary:hover{
+  border-color: white !important;
+  background-color: white !important;
+  color: black !important;
+
+}
+
+
+.galleryTitle{
+  color: black
+}
+
+
+.publiImg{
+  height: 50px !important;
+}
+
+.custom-img {
+  width: 110px;}
+.custom-card{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

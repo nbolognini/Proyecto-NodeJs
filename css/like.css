@@ -1,0 +1,32 @@
+.like-button {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Transición suave al escalar el botón */
+
+    /* Establecer un ancho y alto para las imágenes */
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilo para la mano azul llena */
+.like-button img[src*="filled_blue_hand.png"] {
+    /* Puedes usar una imagen de fondo o cambiar los estilos para adaptarlos a tu diseño */
+    background-image: url('/static/img/filled_blue_hand.png');
+    /* Si utilizas una imagen de fondo, puedes ajustar el tamaño y la posición */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para la mano azul vacía */
+.like-button img[src*="empty_blue_hand.png"] {
+    /* Puedes usar una imagen de fondo o cambiar los estilos para adaptarlos a tu diseño */
+    background-image: url('/static/img/empty_blue_hand.png');
+    /* Si utilizas una imagen de fondo, puedes ajustar el tamaño y la posición */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Resaltar el botón al pasar el cursor sobre él */
+.like-button:hover {
+    transform: scale(1.2); /* Escalar el botón al 120% del tamaño original */
+}
