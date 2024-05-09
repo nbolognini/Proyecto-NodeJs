@@ -71,21 +71,17 @@ body {
 .btn-outline-primary{
   border-color: white !important;
   color: white !important;
-
 }
 
 .btn-outline-primary:hover{
   border-color: white !important;
   background-color: white !important;
   color: black !important;
-
 }
-
 
 .galleryTitle{
   color: black
 }
-
 
 .publiImg{
   height: 50px !important;
