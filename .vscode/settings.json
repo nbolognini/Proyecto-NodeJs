@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
+    "livePreview.defaultPreviewPath": "/contacto.html"
+=======
     "CodeGPT.apiKey": "Ollama"
+>>>>>>> f450340489721bc7f67b56e223682069d1ac45b7
 }
