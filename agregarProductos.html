@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrendyCloset-Inicio</title>
-    <link rel="icon" href="/img/favicon.ico>">
+    <title>Hotel: Inicio</title>
     <link rel="stylesheet" href="css/style.css">
-
-    
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -22,45 +19,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"/>
 
-    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.ico" > -->
-   
-    
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" >
+
+    <script src="./js/scripts.js"></script>
+
 </head>
-<body style=background-image:url(/img/Fondoprincipal.jfif);>
+<body>
 
 <header class="bg-dark text-white tchaco-header">
-  <h1 class="Titulo">TrendyCloset</h1>
+    <h1>Agregar Producto</h1>
     <!-- Aquí puedes agregar el logo, enlaces a otras páginas, etc. -->
 </header>
 
 <nav>
     <ul>
-      <li><a href="/index.html"><h1>Inicio</h1></a></li>
-      <li><a href="/tienda.html"><h1>Tienda</h1></a></li>
-      <li><a href="/carrito.html"><h1>Carrito</h1></a></li>
-      <li><a href="/contacto.html"><h1>Contacto</h1></a></li>
-      <li><a href="/agregarProductos.html"><h1>Agregar producto</h1></a></li>
-      <li><a href="/verProductos.html"><h1>Ver productos</h1></a></li>
-
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/acercaDe.html">Acerca de</a></li>
+      <li><a href="/servicios.html">Servicios</a></li>
+      <li><a href="/contacto.html">Contacto</a></li>
+      <li><a href="/productos.html">Productos</a></li>
     </ul>
 </nav>
 
 
 <main>
     <section>
-       <article class="Presentacion">
-        <strong>Bienvenidos a TrendyCloset</strong>
-        <p>En TrendyCloset, encontrarás moda urbana de alta calidad a precios asequibles. Desde abrigos hasta jeans de corte moderno, tenemos todo lo que necesitas para destacar en la ciudad.<br><br> ¡Visítanos en nuestra página web y descubre la moda que te hará lucir genial esta temporada!</p>
+        <h2>Ingrese su nuevo producto</h2>
+        <hr>
+        <div>Codigo del producto:</div>
+        <input type="text" id="txtCodigo">
+        <br><br>
+
+        <div>Nombre del producto:</div>        
+        <input type="text" id="txtNombre">
+        <br><br>
+
+        <div>Tipo:</div>
+        <input type="text" id="txtTipo">
+        <br><br>
+
+        <div>Valor unidad:</div>
+        <input type="text" id="txtValorUnidad">
+        <br><br>
+
+        <div>Cantidad disponible:</div>
+        <input type="text" id="txtCantidad">
+        <br>
+        <br>
 
 
+        <button onclick="agregarProducto()">Agregar</button>
+        <br>
+        <br>
+        <button onclick="mostrarProductos()">Mostrar Productos</button>
+
+        <!-- Aquí puedes agregar una imagen de fondo, texto, botón de llamada a la acción, etc. -->
+    </section>
+    <section>
 
 
-
-
-   
-
-   
+    </section>
 </main>
+
+
+
 
 
 <div class="whatsapp-container">
@@ -69,9 +91,6 @@
       <img src="img/botonW.png" alt="Contactar por WhatsApp">
   </a>
 </div>
-
-
-
 
 <footer class="footerPersonal py-2 w-100">
     <div class="row d-flex w-100">
@@ -82,7 +101,7 @@
       </div>
       <div class="col-md-4 mt-2 mb-2 text-center">
         <a href="#">
-          <img src="img/logoDeTienda.PNG" alt="" width="120" />
+          <img src="img/logo.jpg" alt="" width="140" />
         </a>
       </div>
       <div

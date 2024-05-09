@@ -21,3 +21,48 @@ window.addEventListener("scroll", function () {
       }
     });
   });
+
+// creo un array de productos
+let productos = [];
+
+// creo una funcion constructora de la clase Producto
+function Producto(codigo, nombre, tipo, valorUnidad, cantidad){
+    this.codigo = codigo;
+    this.nombre = nombre;
+    this.tipo = tipo;
+    this.valorUnidad = valorUnidad;
+    this.cantidad = cantidad;
+}
+
+function agregarProducto() {
+    let codigo = document.getElementById("txtCodigo").value;
+    let nombre = document.getElementById("txtNombre").value;
+    let tipo = document.getElementById("txtTipo").value;
+    let valorUnidad = document.getElementById("txtValorUnidad").value;
+    let cantidad = document.getElementById("txtCantidad").value;
+
+    let nuevoProducto = new Producto(codigo, nombre, tipo, valorUnidad, cantidad);
+    productos.push(nuevoProducto);
+
+    alert("El producto " + nuevoProducto.codigo +  " ha sido agregado");
+    limpiarCampos();
+}
+
+function mostrarProductos() {
+    let listado = '';
+    for(Producto of productos){
+        for(let prop in Producto){
+            listado = listado + prop.toUpperCase() + ": " + Producto[prop] + ","
+        }
+        listado = listado + "\n";
+    }
+    alert(listado);
+}
+
+function limpiarCampos() {
+    document.getElementById("txtCodigo").value = "";
+    document.getElementById("txtNombre").value = "";
+    document.getElementById("txtTipo").value = "";
+    document.getElementById("txtValorUnidad").value = "";
+    document.getElementById("txtCantidad").value = "";
+}
