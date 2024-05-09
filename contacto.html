@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel: Inicio</title>
+    <title>TrendyCloset-contacto</title>
+    <link rel="icon" href="/img/favicon.ico>">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Bootstrap CSS v5.2.1 -->
@@ -19,37 +20,72 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"/>
 
-    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" >
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.ico" > -->
   
     
 </head>
-<body>
+<body style="background-image: url(/img/Fondocontactos.jfif);">
 
 <header class="bg-dark text-white tchaco-header">
-    <h1>Barra de navegación</h1>
+  <h1 class="Titulo">TrendyCloset</h1>
     <!-- Aquí puedes agregar el logo, enlaces a otras páginas, etc. -->
 </header>
 
 <nav>
-    <ul>
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/acercaDe.html">Acerca de</a></li>
-        <li><a href="/servicios.html">Servicios</a></li>
-        <li><a href="/contacto.html">Contacto</a></li>
-    </ul>
+  <ul>
+    <li><a href="/index.html"><h1>Inicio</h1></a></li>
+    <li><a href="/tienda.html"><h1>Tienda</h1></a></li>
+    <li><a href="/carrito.html"><h1>Carrito</h1></a></li>
+    <li><a href="/contacto.html"><h1>Contacto</h1></a></li>
+  </ul>
 </nav>
 
 <main>
-    <section>
-        <h2>Hero</h2>
-        <!-- Aquí puedes agregar una imagen de fondo, texto, botón de llamada a la acción, etc. -->
-    </section>
+  
+    <div class="conteinerDeContacto">
 
-    <section>
-        <h2>Contenido</h2>
-        
-    </section>
+      <div class="elemento1">
+      
+      <h1 class="titulos">Contactanos</h1>
+      <form action="/action_page.php">
+       <fieldset>
+        <legend><h4>Para mas informacion contactanos:</h4></legend>
+        <label for="fname"><h4>Nombre</h4></label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname"><h4>Apellido</h4></label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email"><h4>Email:</h4></label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="enviar">
+       </fieldset>
+      </form>
+
+      </div>
+
+     <div class="elemento1">
+      <h1 class="titulos">Estamos en:</h1>
+      <iframe class="mapa" src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.111832485443!2d-58.476746808391724!3d-34.62661410318971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc93bc80dde37%3A0x2cb014710f7d87ad!2sROPA%20FLORES!5e0!3m2!1ses-419!2sar!4v1715131565037!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0;" allowfullscreen></iframe>
+      </div>
+
+      <div class="elemento1">
+      <a href="index.html"><h3 class="Volver">Volver</h3></a>
+      </div>
+    </div>
+    
+     
+      
+    
+
+
+
+    </div>
+
+
+    
+    
 </main>
+
+
 <div class="whatsapp-container">
     <a href="https://wa.me/+5491136073178" target="_blank">
          
@@ -62,33 +98,19 @@
 <footer class="footerPersonal py-2 w-100">
     <div class="row d-flex w-100">
       <div class="col-md-4 d-flex justify-content-center align-items-center">
-        <span class="text-white mr-2"
-          >Copyright | Grupo 4 - Comisión 24128 - Codo a Codo 2024</span
-        >
+        <span class="text-white mr-2">Copyright | Grupo 4 - Comisión 24128 - Codo a Codo 2024</span>
       </div>
-      <div class="col-md-4 mt-2 mb-2 text-center">
-        <a href="#">
-          <img src="img/logo.jpg" alt="" width="140" />
-        </a>
+      <div class="col-md-4 mt-2 mb-2 text-center"><a href="#"><img src="img/logoDeTienda.PNG" alt="" width="120" />
+</a>
       </div>
-      <div
-        class="col-md-4 d-flex gap-4 justify-content-center align-items-center"
-      >
-        <span
-          ><a class="m-2 d-inline" href="#"
-            ><img src="img/twitter.png" alt="" width="30" /></a
-        ></span>
-        <span
-          ><a class="m-2 d-block" href="#"
-            ><img src="img/facebook.png" alt="" width="30" /></a
-        ></span>
-        <span
-          ><a class="m-2 d-block" href="#"
-            ><img src="img/instagram.png" width="30" alt="" /></a
-        ></span>
+      <div class="col-md-4 d-flex gap-4 justify-content-center align-items-center">
+        <span><a class="m-2 d-inline" href="#"><img src="img/twitter.png" alt="" width="30" /></a></span>
+        <span><a class="m-2 d-block" href="#"><img src="img/facebook.png" alt="" width="30" /></a></span>
+        <span><a class="m-2 d-block" href="#"><img src="img/instagram.png" width="30" alt="" /></a></span>
       </div>
     </div>
   </footer>
+
 
 
 </body>
