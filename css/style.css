@@ -24,6 +24,8 @@ header{
 header, nav, main, footer {
     margin: 20px;
 }
+
+
 .Titulo{
     
     -webkit-text-stroke-width:1px;;
@@ -82,29 +84,33 @@ nav ul li:last-child {
 }
 
 .Presentacion{
-    background-color:rgba(135, 135, 173, 0.5);  /* cambia el fondo a un tono mas transparente de la presentacion de inicio*/
-
+    background-color:rgba(193, 193, 202, 0.5);  /* cambia el fondo a un tono mas transparente de la presentacion de inicio*/
+    
 
 }
 
 article{
     text-align:center;  /* da tamaño y centra la presentacion de inicio */
     font-size: 20px;
+    
 }
 
 strong{
-    -webkit-text-stroke-width:1px;;
-    -webkit-text-stroke-color: rgb(12, 6, 1);
+    -webkit-text-stroke-width:2px;;
+    -webkit-text-stroke-color: rgba(43, 8, 8, 0.5);
     color:brown;
     font-size: 200%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 p{
-    -webkit-text-stroke-width:1px;;
-    -webkit-text-stroke-color: rgb(12, 6, 1);
+    -webkit-text-stroke-width:2px;;
+    /* -webkit-text-stroke-color: rgb(12, 6, 1); */
+       -webkit-text-stroke-color:rgba(43, 8, 8, 0.5);
+
     color:brown;
     font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
