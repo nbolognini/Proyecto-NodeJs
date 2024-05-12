@@ -131,9 +131,13 @@ p{
 }
 
 .titulos{  /* animacion de titulos */
- -webkit-text-stroke-width:1px;;
- -webkit-text-stroke-color: rgb(0, 2, 2);
- color: rgb(86, 91, 160);
+    -webkit-text-stroke-width:2px;;
+    -webkit-text-stroke-color: rgba(43, 8, 8, 0.5);
+    color:brown;
+    font-size: 200%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
  animation: moverTexto 2s infinite alternate;
 }
  @keyframes moverTexto{
@@ -161,16 +165,24 @@ nav ul li h1{  /* estilos del menu */
 
 h4{
     
-    -webkit-text-stroke-width:1px;;
-    -webkit-text-stroke-color: rgb(0, 2, 2);
-    color: rgb(86, 91, 160);
+    -webkit-text-stroke-width:2px;;
+    /* -webkit-text-stroke-color: rgb(12, 6, 1); */
+       -webkit-text-stroke-color:rgba(43, 8, 8, 0.5);
+
+    color:brown;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
  
 .Volver{  /* estilos del boton de voler */
-    -webkit-text-stroke-width:1px;;
-    -webkit-text-stroke-color: rgb(0, 2, 2);
-    color: rgb(86, 91, 160);
+   -webkit-text-stroke-width:2px;;
+    /* -webkit-text-stroke-color: rgb(12, 6, 1); */
+       -webkit-text-stroke-color:rgba(43, 8, 8, 0.5);
+
+    color:brown;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 } 
 
