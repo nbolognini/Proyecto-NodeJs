@@ -6,6 +6,14 @@ body {
     padding: 0;
     
 }
+
+#fondoPrincipal{
+
+    background-image:url(/img/Fondoprincipal.jfif);
+    border-image-repeat: no-repeat;
+
+
+}
 header{
     background-image: url(/img/portada.PNG);
     background-size: cover;
@@ -82,6 +90,22 @@ nav ul li:last-child {
 article{
     text-align:center;  /* da tamaño y centra la presentacion de inicio */
     font-size: 20px;
+}
+
+strong{
+    -webkit-text-stroke-width:1px;;
+    -webkit-text-stroke-color: rgb(12, 6, 1);
+    color:brown;
+    font-size: 200%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    -webkit-text-stroke-width:1px;;
+    -webkit-text-stroke-color: rgb(12, 6, 1);
+    color:brown;
+    font-size: 150%;
+
 }
 
 .conteinerDeContacto {  /* importante para el responsive, encolumna los elementos en caso de achicamiento */
