@@ -35,17 +35,23 @@ function Producto(codigo, nombre, tipo, valorUnidad, cantidad){
 }
 
 function agregarProducto() {
-    let codigo = document.getElementById("txtCodigo").value;
-    let nombre = document.getElementById("txtNombre").value;
-    let tipo = document.getElementById("txtTipo").value;
-    let valorUnidad = document.getElementById("txtValorUnidad").value;
-    let cantidad = document.getElementById("txtCantidad").value;
+  let codigo = document.getElementById("txtCodigo").value;
+  let nombre = document.getElementById("txtNombre").value;
+  let tipo = document.getElementById("txtTipo").value;
+  let valorUnidad = document.getElementById("txtValorUnidad").value;
+  let cantidad = document.getElementById("txtCantidad").value;
 
-    let nuevoProducto = new Producto(codigo, nombre, tipo, valorUnidad, cantidad);
-    productos.push(nuevoProducto);
+  let nuevoProducto = new Producto(codigo, nombre, tipo, valorUnidad, cantidad);
+  productos.push(nuevoProducto);
 
-    alert("El producto " + nuevoProducto.codigo +  " ha sido agregado");
-    limpiarCampos();
+  let productosDiv = document.getElementById("productosDiv");
+  productosDiv.innerHTML = ""; // Limpia el contenedor
+  for (let producto of productos) {
+      productosDiv.innerHTML += `<p>Código: ${producto.codigo}, Nombre: ${producto.nombre}, Tipo: ${producto.tipo}, Valor: ${producto.valorUnidad}, Cantidad: ${producto.cantidad}</p>`;
+  }
+
+  //alert("El producto " + nuevoProducto.codigo + " con valor " + nuevoProducto.valorUnidad + " ha sido agregado");
+  limpiarCampos();
 }
 
 function mostrarProductos() {

@@ -89,6 +89,14 @@ nav ul li:last-child {
 
 }
 
+.Presentacion2{
+    background-color:rgba(193, 193, 202, 0.904);
+    flex:1;
+    align-items: flex-start;  /* cambia el fondo a un tono mas transparente de la presentacion de inicio*/
+    
+
+}
+
 article{
     text-align:center;  /* da tamaño y centra la presentacion de inicio */
     font-size: 20px;

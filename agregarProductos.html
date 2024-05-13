@@ -41,36 +41,51 @@
     </ul>
 </nav>
 
-
 <main>
-    <section>
+  <section style="display: flex;">
+
+      <div style="flex: 0.5;">
         <div class="Presentacion">
-        <strong>Ingrese su nuevo producto</strong>
-        <hr>
-        <div><h4>Codigo del producto:</h4></div>
-        <input type="text" id="txtCodigo">
-        <br>
-        <div><h4>Nombre del producto:</h4></div>        
-        <input type="text" id="txtNombre">
-        <br>
-        <div><h4>Tipo:</h4></div>
-        <input type="text" id="txtTipo">
-        <br>
-        <div><h4>Valor unidad:</h4></div>
-        <input type="text" id="txtValorUnidad">
-        <br>
-        <div><h4>Cantidad disponible:</h4></div>
-        <input type="text" id="txtCantidad">
-        <br>
-        <br>
-        <button onclick="agregarProducto()">Agregar</button>
-        <br>
-        <br>
-        <button onclick="mostrarProductos()">Mostrar Productos</button>
+          <strong>Ingrese su nuevo producto</strong>
+          <hr>
+          <div><h4>Codigo del producto:</h4></div>
+          <input type="text" id="txtCodigo">
+          <br>
+          <div><h4>Nombre del producto:</h4></div>        
+          <input type="text" id="txtNombre">
+          <br>
+          <div><h4>Tipo:</h4></div>
+          <input type="text" id="txtTipo">
+          <br>
+          <div><h4>Valor unidad:</h4></div>
+          <input type="text" id="txtValorUnidad">
+          <br>
+          <div><h4>Cantidad disponible:</h4></div>
+          <input type="text" id="txtCantidad">
+          <br>
+          <br>
+          <button onclick="agregarProducto()">Agregar</button>
+          <br>
+          <br>
+          
+        </div>
       </div>
-        <!-- Aquí puedes agregar una imagen de fondo, texto, botón de llamada a la acción, etc. -->
-    </section>
-  
+
+      <div style="flex: 0.5;">
+        <div class="Presentacion2">
+          <div id="productosDiv">
+          <!-- Aca muestro los productos -->
+          </div>
+      </div>
+      <div style="text-align: center;">
+        <button onclick="mostrarProductos()">Guardar cambios</button>
+      </div>
+
+
+      </div>
+
+  </section>
+
 </main>
 
 
