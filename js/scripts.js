@@ -63,6 +63,7 @@ function mostrarProductos() {
         listado = listado + "\n";
     }
     alert(listado);
+    limpiarProductosDiv();
 }
 
 function limpiarCampos() {
@@ -71,4 +72,8 @@ function limpiarCampos() {
     document.getElementById("txtTipo").value = "";
     document.getElementById("txtValorUnidad").value = "";
     document.getElementById("txtCantidad").value = "";
+}
+
+function limpiarProductosDiv() {
+  document.getElementById("productosDiv").innerHTML = "";
 }
