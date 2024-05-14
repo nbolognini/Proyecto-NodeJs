@@ -83,10 +83,9 @@ nav ul li:last-child {
    
 }
 
-.Presentacion{
-    background-color:rgba(193, 193, 202, 0.5);  /* cambia el fondo a un tono mas transparente de la presentacion de inicio*/
-    
-
+.Presentacion {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: #ffffff; /* White text for contrast */
 }
 
 .Presentacion2{
@@ -106,7 +105,7 @@ article{
 strong{
     -webkit-text-stroke-width:2px;;
     -webkit-text-stroke-color: rgba(43, 8, 8, 0.5);
-    color:brown;
+    color:ffff;
     font-size: 200%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -116,7 +115,7 @@ p{
     /* -webkit-text-stroke-color: rgb(12, 6, 1); */
        -webkit-text-stroke-color:rgba(43, 8, 8, 0.5);
 
-    color:brown;
+    color:ffff;
     font-size: 150%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -141,7 +140,7 @@ p{
 .titulos{  /* animacion de titulos */
     -webkit-text-stroke-width:2px;;
     -webkit-text-stroke-color: rgba(43, 8, 8, 0.5);
-    color:brown;
+    color:rgb(165, 42, 134);
     font-size: 200%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -160,24 +159,18 @@ p{
 }
 
 nav ul li h1{  /* estilos del menu */
-    
     color: #c5b2b2;
     font-size: 20px;
     display: inline;
     border: 2px solid black;
     padding: 5px;
-    background-color: rgb(12, 50, 131);
-   
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
 }
-   
 
 h4{
-    
-    -webkit-text-stroke-width:2px;;
-    /* -webkit-text-stroke-color: rgb(12, 6, 1); */
-       -webkit-text-stroke-color:rgba(43, 8, 8, 0.5);
-
-    color:brown;
+    -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color:rgb(52, 165, 42);
     font-size: 150%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
