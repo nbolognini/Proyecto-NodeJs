@@ -55,7 +55,7 @@ function agregarProducto() {
 }
 
 function mostrarProductos() {
-    let listado = '';
+    let listado = 'Se guardarán en la Tienda los siguientes productos:\n';
     for(Producto of productos){
         for(let prop in Producto){
             listado = listado + prop.toUpperCase() + ": " + Producto[prop] + ","
@@ -63,6 +63,7 @@ function mostrarProductos() {
         listado = listado + "\n";
     }
     alert(listado);
+    
     limpiarProductosDiv();
     limpiarCampos();
     limpiarProductos()
@@ -79,6 +80,16 @@ function limpiarCampos() {
 
 function limpiarProductosDiv() {
   document.getElementById("productosDiv").innerHTML = "";
+
+  // Obténgo los productos existentes de localStorage
+  let productosExistentes = JSON.parse(localStorage.getItem('productosLocalStorage')) || [];
+
+  // Combino los productos existentes con los nuevos productos
+  let productosActualizados = productosExistentes.concat(productos);
+
+  // JSON.stringify(productos) convierte el array de productos en un string JSON
+  // localStorage.setItem('productos', JSON.stringify(productosActualizados)) guarda el string JSON en el localStorage
+  localStorage.setItem('productosLocalStorage', JSON.stringify(productosActualizados));
 }
 
 function limpiarProductos() {
@@ -87,4 +98,8 @@ function limpiarProductos() {
 
 function recargarPagina() {
   location.reload();
+}
+
+function limpiarProductosLocalStorage() {
+  localStorage.removeItem('productosLocalStorage');
 }
