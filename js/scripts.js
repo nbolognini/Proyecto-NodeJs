@@ -55,7 +55,7 @@ function agregarProducto() {
 }
 
 function mostrarProductos() {
-    let listado = 'Se guardarán en la Tienda los siguientes productos:\n';
+    let listado = 'Se guardarán en la tienda los siguientes productos:\n';
     for(Producto of productos){
         for(let prop in Producto){
             listado = listado + prop.toUpperCase() + ": " + Producto[prop] + ","
