@@ -1,11 +1,19 @@
-/* Estilos CSS */
-body {
-    
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    
+    display: flex;
+    flex-direction: column;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
 
 #fondoPrincipal{
 
@@ -82,6 +90,9 @@ nav ul li:last-child {
     margin-right: 0; /* Elimina el margen derecho del último elemento */
    
 }
+
+
+
 
 .Presentacion {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
@@ -165,7 +176,9 @@ nav ul li h1{  /* estilos del menu */
     border: 2px solid black;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    
 }
+
 
 h4{
     -webkit-text-stroke-width:2px;
@@ -187,11 +200,11 @@ h4{
 
 } 
 
-.whatsapp-container {  /* estilos de whastapp */
+.whatsapp-container {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999; 
+    bottom: 150px; /* Ajusta la distancia desde la parte inferior según sea necesario */
+    right: 20px; /* Ajusta la distancia desde la parte derecha según sea necesario */
+    z-index: 500; /* Asegúrate de que el botón esté por encima de otros elementos */
 }
 
 .whatsapp-container img {
@@ -200,27 +213,17 @@ h4{
 }
 
 
-
-
 footer {
-    
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
-    
-    position: absolute; /* para que la barra del footer este pegada abajo*/
-    bottom: 0;
     width: 100%;
+    margin-top: auto; /* Hace que el footer siempre esté al final */
 }
 
 
-/* position: fixed;
-left: 0;
-bottom: 0;
-height: 30px;
-width: 100%;
-background: #999; */
+
  
 .footerPersonal {
     background-color: rgb(12, 50, 131);
