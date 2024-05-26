@@ -8,13 +8,19 @@
     <script src="./js/tienda.js"></script>
 </head>
 <body>
-    <h1>Productos:</h1>
-    <div id="productosDiv"></div>
+    <h1>Lista de Productos:</h1>
+    <div id="divDeProductos"></div>
+    <button id="botonLimpiarProductos">Limpiar Productos</button>
     <script>
+        // Cuando la página se haya cargado completamente
         window.onload = function() {
-          actualizarListado();
-          document.getElementById('limpiarProductosLocalStorage').addEventListener('click', limpiarProductosLocalStorage);
-        };
+        // ...ejecuta la función actualizarListaDeProductos()...
+        actualizarListaDeProductos();
+
+        // ...y agrega un controlador de eventos de clic al elemento con el ID 'botonLimpiarProductos'
+        // que ejecutará la función limpiarProductosDeLocalStorage() cuando el elemento se haga clic.
+        document.getElementById('botonLimpiarProductos').addEventListener('click', limpiarProductosDeLocalStorage);
+};
     </script>
 </body>
 </html>

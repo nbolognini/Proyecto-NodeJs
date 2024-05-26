@@ -54,7 +54,7 @@ function agregarProducto() {
   limpiarCampos();
 }
 
-function mostrarProductos() {
+function GuardarProductos() {
     let listado = 'Se guardarán en la tienda los siguientes productos:\n';
     for(Producto of productos){
         for(let prop in Producto){
